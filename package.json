@@ -1,7 +1,8 @@
 {
   "name": "aws-node-express-api-project",
   "version": "1.0.0",
-  "description": "",
+  "type": "module",
+  "description": "Simple API",
   "dependencies": {
     "aws-serverless-express": "^3.4.0",
     "body-parser": "^1.19.0",

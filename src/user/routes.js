@@ -1,17 +1,15 @@
-const express = require('express');
+import { Router } from 'express';
 
-const routes = express.Router({
-    mergeParams: true
-})
+const routes = Router({ mergeParams: true });
 
-routes.get('/', (req, res) =>{
+routes.get('/', (req, res) => {
     res.status(200).json({
-        "name":"mwando",
-        "username":"mwandotheboss",
-        "email":"zephaniamwando@gmail.com"
-    })
-})
+        "name": "mwando",
+        "username": "mwandotheboss",
+        "email": "zephaniamwando@gmail.com"
+    });
+});
 
-module.exports = {
-    routes
-}
+export default {
+    routes,
+};
